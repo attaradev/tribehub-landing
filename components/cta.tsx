@@ -23,7 +23,7 @@ export function CTA() {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2 shadow-lg hover:shadow-xl transition-all"
           >
-            <a href="mailto:hello@tribehub.app?subject=TribeHub%20Waitlist">
+            <a href="mailto:hello@tribehub.co?subject=TribeHub%20Waitlist">
               Join the waitlist <ArrowRight className="w-4 h-4" />
             </a>
           </Button>
@@ -33,7 +33,7 @@ export function CTA() {
             variant="outline"
             className="border-border hover:bg-muted bg-transparent"
           >
-            <a href="mailto:hello@tribehub.app?subject=TribeHub%20Intro%20Call">Book an intro call</a>
+            <a href="mailto:hello@tribehub.co?subject=TribeHub%20Intro%20Call">Book an intro call</a>
           </Button>
         </div>
 

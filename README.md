@@ -30,7 +30,7 @@
 - `app/` Next.js App Router entry files (`layout.tsx`, `page.tsx`, global styles import).
 - `components/` React components split by section plus reusable UI primitives (cards, buttons, accordion, etc.).
 - `styles/globals.css` Tailwind base imports and global theme tokens.
-- `public/` Static assets (placeholder imagery, icons).
+- `public/` Static brand assets (favicon, social sharing card).
 - `lib/` and `hooks/` house utility helpers and client hooks.
 
 ## Design System Notes

@@ -59,7 +59,7 @@ export function Hero() {
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-primary-foreground gap-2 shadow-lg hover:shadow-xl transition-all"
               >
-                <a href="mailto:hello@tribehub.app?subject=TribeHub%20Waitlist">
+                <a href="mailto:hello@tribehub.co?subject=TribeHub%20Waitlist">
                   Join the waitlist <ArrowRight className="w-4 h-4" />
                 </a>
               </Button>

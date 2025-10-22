@@ -42,7 +42,7 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
               <li>
-                <a href="mailto:hello@tribehub.app" className="hover:text-foreground transition-colors">
+                <a href="mailto:hello@tribehub.co" className="hover:text-foreground transition-colors">
                   Contact
                 </a>
               </li>

@@ -30,10 +30,10 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           <Button asChild variant="ghost" className="hidden sm:inline-flex">
-            <a href="mailto:hello@tribehub.app?subject=TribeHub%20Intro">Talk to us</a>
+            <a href="mailto:hello@tribehub.co?subject=TribeHub%20Intro">Talk to us</a>
           </Button>
           <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            <a href="mailto:hello@tribehub.app?subject=TribeHub%20Waitlist">Join waitlist</a>
+            <a href="mailto:hello@tribehub.co?subject=TribeHub%20Waitlist">Join waitlist</a>
           </Button>
         </div>
       </div>

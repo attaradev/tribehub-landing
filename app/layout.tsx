@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/placeholder.jpg",
+        url: "/og-card.svg",
         width: 1200,
         height: 630,
-        alt: "TribeHub dashboard roadmap preview",
+        alt: "TribeHub roadmap preview and headline",
       },
     ],
   },
@@ -39,10 +39,12 @@ export const metadata: Metadata = {
     title: "TribeHub — Build the command center your community deserves",
     description:
       "Work with the TribeHub team to co-design member HQ, contribution automations, and event ops built for your organisation.",
-    images: ["/placeholder.jpg"],
+    images: ["/og-card.svg"],
   },
   icons: {
-    icon: "/placeholder-logo.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 }
 

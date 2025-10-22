@@ -28,7 +28,7 @@ const roadmap = [
 
 export function Hero() {
   return (
-    <section id="hero" className="relative overflow-hidden py-16 md:py-24 lg:py-32">
+    <section id="hero" className="relative overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 pointer-events-none" />
       <div className="absolute top-32 right-0 w-72 h-72 bg-accent/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-12 left-0 w-[26rem] h-[26rem] bg-primary/15 rounded-full blur-3xl pointer-events-none" />
@@ -83,8 +83,8 @@ export function Hero() {
             </div>
 
             <p className="text-sm text-foreground/60">
-              First founding cohort onboarding early 2025. We invite teams who want to co-design the future of community
-              operations.
+              Founding cohort onboarding kicks off in Q4 2025. We invite teams who want to co-design the future of
+              community operations.
             </p>
           </div>
 

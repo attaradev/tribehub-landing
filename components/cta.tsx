@@ -38,7 +38,7 @@ export function CTA() {
         </div>
 
         <p className="text-sm text-foreground/60">
-          First invitations roll out in early 2025. We’ll keep you updated with transparent progress notes.
+          First invitations roll out in Q4 2025. We’ll keep you updated with transparent progress notes.
         </p>
       </div>
     </section>

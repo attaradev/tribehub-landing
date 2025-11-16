@@ -1,23 +1,28 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
-import { HowItWorks } from "@/components/how-it-works"
 import { Benefits } from "@/components/benefits"
+import { HowItWorks } from "@/components/how-it-works"
 import { FAQ } from "@/components/faq"
-import { CTA } from "@/components/cta"
+import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <>
+      <a href="#main-content" className="skip-to-content">
+        Skip to main content
+      </a>
       <Header />
-      <Hero />
-      <Features />
-      <Benefits />
-      <HowItWorks />
-      <FAQ />
-      <CTA />
+      <main id="main-content" className="min-h-screen bg-background">
+        <Hero />
+        <Features />
+        <Benefits />
+        <HowItWorks />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }

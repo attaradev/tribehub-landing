@@ -6,56 +6,63 @@ import { Headphones, Shield, Sparkles, Zap } from "lucide-react"
 const benefits = [
   {
     icon: Sparkles,
-    title: "Operators at the table",
+    title: "Built with you, not for you",
     description:
-      "Founding teams co-design with us from day one so the product feels like it was built for your rituals—not a generic tool you need to bend.",
+      "You're not just testing features, you're co-designing them. Through monthly sessions and real-time feedback, you'll shape a platform that actually fits how your community works, not how Silicon Valley thinks you should work.",
   },
   {
     icon: Zap,
-    title: "Momentum without busywork",
+    title: "Get your weekends back",
     description:
-      "Automation works behind the scenes to handle the repetitive tasks, so you can focus on building relationships and strategy.",
+      "Stop spending Saturday afternoons chasing dues or updating spreadsheets. TribeHub automates the repetitive busywork (reminders, reports, follow-ups) so you can focus on the relationships and impact that matter.",
   },
   {
     icon: Shield,
-    title: "Trustworthy by default",
+    title: "Security you can stand behind",
     description:
-      "Privacy, member consent, and data governance are foundational—we’re designing controls with guidance from compliance experts.",
+      "Your members trust you with their data. We take that seriously. From day one, we're building with data protection, member privacy, and compliance guidance from legal experts because trust is earned, not assumed.",
   },
   {
     icon: Headphones,
-    title: "Partner-level support",
+    title: "Real support, no runaround",
     description:
-      "You get a dedicated product partner, async channels, and real humans who understand what running a community really takes.",
+      "When you need help, you'll talk to actual humans who understand community work, not bots or generic support queues. Direct access to our team through dedicated channels, plain answers, and genuine care.",
   },
 ]
 
 export function Benefits() {
   return (
-    <section className="py-14 md:py-20 lg:py-28 bg-gradient-to-b from-transparent via-primary/6 to-transparent relative">
+    <section className="py-14 md:py-20 lg:py-28 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 -z-10 opacity-20">
+        <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+      </div>
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl md:text-5xl font-semibold text-foreground text-balance">Why teams partner with us</h2>
-          <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
-            TribeHub is a long-term build. We’re committed to shipping with care, clarity, and the level of partnership
-            community leaders deserve.
+        <div className="text-center space-y-6 mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-[1.1]">
+            Why community leaders choose TribeHub
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed pt-2">
+            We're not rushing to launch a half-baked product. We're building TribeHub the right way: slowly, deliberately, and in true partnership with community leaders who know what actually works.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon
             return (
-              <Card key={index} className="border border-border/70 bg-card/80 backdrop-blur group transition-all duration-300 hover:border-primary/50 hover:-translate-y-1">
-                <CardContent className="pt-8 pb-10">
-                  <div className="space-y-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary/15 via-accent/15 to-transparent group-hover:from-primary/20 group-hover:via-accent/20 rounded-lg flex items-center justify-center transition-all">
-                      <Icon className="w-6 h-6 text-primary" />
+              <Card key={index} className="border border-border/60 bg-card/90 backdrop-blur group transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:-translate-y-2">
+                <CardContent className="pt-12 pb-12 px-8">
+                  <div className="space-y-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary/20 via-accent/15 to-transparent group-hover:from-primary/30 group-hover:via-accent/25 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                      <Icon className="w-8 h-8 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground text-lg">{benefit.title}</h3>
-                      <p className="text-sm text-foreground/60 mt-2 leading-relaxed">{benefit.description}</p>
+                      <h3 className="font-bold text-foreground text-xl mb-4 group-hover:text-primary transition-colors">{benefit.title}</h3>
+                      <p className="text-base text-muted-foreground leading-relaxed">{benefit.description}</p>
                     </div>
                   </div>
                 </CardContent>

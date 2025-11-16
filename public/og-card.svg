@@ -1,165 +1,288 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bgGradient" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#EEF2FF"/>
-      <stop offset="0.45" stop-color="#F5F3FF"/>
-      <stop offset="1" stop-color="#E0F2FE"/>
+      <stop offset="0" stop-color="#F9FAFB"/>
+      <stop offset="0.5" stop-color="#F3F4F6"/>
+      <stop offset="1" stop-color="#E5E7EB"/>
     </linearGradient>
-    <linearGradient id="pillGradient" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#2563EB"/>
-      <stop offset="1" stop-color="#7C3AED"/>
+    <linearGradient id="pillGradient" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#A78BFA"/>
     </linearGradient>
-    <linearGradient id="cardGlow" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="rgba(37,99,235,0.15)"/>
-      <stop offset="1" stop-color="rgba(124,58,237,0.05)"/>
+    <linearGradient id="cardGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F9FAFB"/>
     </linearGradient>
-    <filter id="cardShadow" x="-8%" y="-16%" width="116%" height="148%" filterUnits="objectBoundingBox">
-      <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-      <feColorMatrix
-        in="shadowBlurOuter1"
-        values="0 0 0 0 0.149 0 0 0 0 0.204 0 0 0 0 0.431 0 0 0 0.15 0"
-      />
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.08"/>
     </filter>
   </defs>
+
+  <!-- Background -->
   <rect width="1200" height="630" fill="url(#bgGradient)"/>
-  <g opacity=".3">
-    <circle cx="1050" cy="120" r="210" fill="#C7D2FE"/>
-    <circle cx="210" cy="540" r="240" fill="#BFDBFE"/>
-    <circle cx="930" cy="510" r="150" fill="#DDD6FE"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="100" r="180" fill="#DDD6FE" opacity="0.3"/>
+  <circle cx="150" cy="550" r="200" fill="#C7D2FE" opacity="0.25"/>
+
+  <!-- Logo -->
+  <g transform="translate(80 80)">
+    <rect width="80" height="80" rx="16" fill="#8B5CF6"/>
+    <circle cx="25" cy="30" r="7.5" fill="white" opacity="0.95"/>
+    <circle cx="55" cy="30" r="7.5" fill="white" opacity="0.95"/>
+    <circle cx="40" cy="52" r="7.5" fill="white" opacity="0.95"/>
+    <line x1="30" y1="32.5" x2="35" y2="47" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+    <line x1="50" y1="32.5" x2="45" y2="47" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
   </g>
-  <g transform="translate(120 120)">
-    <rect x="0" y="0" width="102" height="102" rx="28" fill="#2563EB"/>
-    <text
-      x="33"
-      y="70"
-      fill="#FFF"
-      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-      font-size="56"
-      font-weight="700"
-    >
-      T
-    </text>
-  </g>
+
+  <!-- Brand name -->
   <text
-    x="240"
-    y="185"
-    fill="#0F172A"
+    x="180"
+    y="130"
+    fill="#111827"
     font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="48"
-    font-weight="600"
+    font-size="42"
+    font-weight="700"
   >
     TribeHub
   </text>
-  <rect x="240" y="210" width="220" height="44" rx="22" fill="url(#pillGradient)"/>
+
+  <!-- Badge -->
+  <rect x="180" y="155" width="300" height="36" rx="18" fill="url(#pillGradient)"/>
   <text
-    x="260"
-    y="240"
-    fill="#fff"
+    x="200"
+    y="179"
+    fill="#FFFFFF"
     font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="22"
-    font-weight="500"
+    font-size="18"
+    font-weight="600"
   >
-    Founding cohort now forming
+    Founding partners now forming
+  </text>
+
+  <!-- Main headline -->
+  <text
+    x="80"
+    y="260"
+    fill="#111827"
+    font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+    font-size="56"
+    font-weight="700"
+    letter-spacing="-0.02em"
+  >
+    Stop juggling tools.
   </text>
   <text
-    x="240"
+    x="80"
     y="320"
-    fill="#0F172A"
+    fill="#111827"
     font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="80"
+    font-size="56"
     font-weight="700"
+    letter-spacing="-0.02em"
   >
-    Build the command
+    Start building
   </text>
   <text
-    x="240"
-    y="400"
-    fill="#0F172A"
+    x="80"
+    y="380"
+    fill="#111827"
     font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="80"
+    font-size="56"
     font-weight="700"
+    letter-spacing="-0.02em"
   >
-    center your community
+    community.
   </text>
+
+  <!-- Description -->
   <text
-    x="240"
-    y="480"
-    fill="#0F172A"
+    x="80"
+    y="425"
+    fill="#4B5563"
     font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="80"
-    font-weight="700"
-  >
-    deserves.
-  </text>
-  <text
-    x="240"
-    y="540"
-    fill="#1F2937"
-    opacity=".7"
-    font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-size="26"
+    font-size="20"
     font-weight="400"
   >
-    Co-design the future of member HQ, contribution flows, and event ops.
+    Community management software built in Ghana, for Africa.
   </text>
-  <g transform="translate(735 170)">
-    <g filter="url(#cardShadow)">
-      <rect x="0" y="0" width="360" height="360" rx="40" fill="#fff"/>
+
+  <!-- Key features -->
+  <g transform="translate(80 465)">
+    <circle cx="0" cy="0" r="4" fill="#8B5CF6"/>
+    <text
+      x="15"
+      y="5"
+      fill="#374151"
+      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+      font-size="17"
+      font-weight="500"
+    >
+      Mobile money integration
+    </text>
+  </g>
+
+  <g transform="translate(305 465)">
+    <circle cx="0" cy="0" r="4" fill="#8B5CF6"/>
+    <text
+      x="15"
+      y="5"
+      fill="#374151"
+      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+      font-size="17"
+      font-weight="500"
+    >
+      Member management
+    </text>
+  </g>
+
+  <g transform="translate(510 465)">
+    <circle cx="0" cy="0" r="4" fill="#8B5CF6"/>
+    <text
+      x="15"
+      y="5"
+      fill="#374151"
+      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+      font-size="17"
+      font-weight="500"
+    >
+      Event coordination
+    </text>
+  </g>
+
+  <!-- Launch date -->
+  <g transform="translate(80 520)">
+    <text
+      x="0"
+      y="0"
+      fill="#8B5CF6"
+      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+      font-size="19"
+      font-weight="700"
+    >
+      Launching Q2 2026
+    </text>
+  </g>
+
+  <!-- Feature card -->
+  <g transform="translate(800 120)">
+    <rect x="0" y="0" width="340" height="420" rx="24" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="340" height="420" rx="24" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+
+    <!-- Card content -->
+    <g transform="translate(30 40)">
+      <!-- Feature 1 -->
+      <rect x="0" y="0" width="280" height="100" rx="16" fill="#F9FAFB"/>
+      <circle cx="20" cy="20" r="8" fill="#8B5CF6" opacity="0.2"/>
+      <circle cx="20" cy="20" r="4" fill="#8B5CF6"/>
+      <text
+        x="40"
+        y="28"
+        fill="#111827"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20"
+        font-weight="600"
+      >
+        Member HQ
+      </text>
+      <text
+        x="20"
+        y="58"
+        fill="#6B7280"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+      >
+        Complete profiles and
+      </text>
+      <text
+        x="20"
+        y="78"
+        fill="#6B7280"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+      >
+        activity tracking
+      </text>
+
+      <!-- Feature 2 -->
+      <rect x="0" y="120" width="280" height="100" rx="16" fill="#F9FAFB"/>
+      <circle cx="20" cy="140" r="8" fill="#8B5CF6" opacity="0.2"/>
+      <circle cx="20" cy="140" r="4" fill="#8B5CF6"/>
+      <text
+        x="40"
+        y="148"
+        fill="#111827"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20"
+        font-weight="600"
+      >
+        Contribution Engine
+      </text>
+      <text
+        x="20"
+        y="178"
+        fill="#6B7280"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+      >
+        Track dues with mobile
+      </text>
+      <text
+        x="20"
+        y="198"
+        fill="#6B7280"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+      >
+        money integration
+      </text>
+
+      <!-- Feature 3 -->
+      <rect x="0" y="240" width="280" height="100" rx="16" fill="#F9FAFB"/>
+      <circle cx="20" cy="260" r="8" fill="#8B5CF6" opacity="0.2"/>
+      <circle cx="20" cy="260" r="4" fill="#8B5CF6"/>
+      <text
+        x="40"
+        y="268"
+        fill="#111827"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20"
+        font-weight="600"
+      >
+        Event Operations
+      </text>
+      <text
+        x="20"
+        y="298"
+        fill="#6B7280"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+      >
+        RSVP tracking and
+      </text>
+      <text
+        x="20"
+        y="318"
+        fill="#6B7280"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+      >
+        volunteer coordination
+      </text>
+
+      <!-- Status badge -->
+      <rect x="0" y="360" width="280" height="40" rx="12" fill="#EEF2FF"/>
+      <text
+        x="140"
+        y="387"
+        fill="#8B5CF6"
+        font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-size="15"
+        font-weight="600"
+        text-anchor="middle"
+      >
+        In active development
+      </text>
     </g>
-    <rect x="0" y="0" width="360" height="360" rx="40" fill="url(#cardGlow)" opacity=".9"/>
-    <rect x="24" y="36" width="312" height="96" rx="20" fill="#F8FAFC" opacity=".92"/>
-    <rect x="24" y="152" width="312" height="96" rx="20" fill="#F1F5F9" opacity=".92"/>
-    <rect x="24" y="268" width="312" height="50" rx="18" fill="#E0F2FE" opacity=".85"/>
-    <text
-      x="44"
-      y="92"
-      fill="#0F172A"
-      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-      font-size="26"
-      font-weight="600"
-    >
-      Unified Member HQ
-    </text>
-    <text
-      x="44"
-      y="128"
-      fill="#1F2937"
-      opacity=".65"
-      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-      font-size="18"
-    >
-      Activity history, roles, and context in one place.
-    </text>
-    <text
-      x="44"
-      y="208"
-      fill="#0F172A"
-      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-      font-size="26"
-      font-weight="600"
-    >
-      Contribution automations
-    </text>
-    <text
-      x="44"
-      y="244"
-      fill="#1F2937"
-      opacity=".65"
-      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-      font-size="18"
-    >
-      Keep dues flowing with gentle, human reminders.
-    </text>
-    <text
-      x="44"
-      y="304"
-      fill="#1D4ED8"
-      font-family="'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-      font-size="18"
-      font-weight="600"
-    >
-      What we’re building with founding partners
-    </text>
   </g>
 </svg>

@@ -120,7 +120,77 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Account for sticky header */
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      radial-gradient(140% 120% at 10% 20%, color-mix(in oklch, var(--primary) 12%, transparent), transparent),
+      radial-gradient(120% 140% at 80% 0%, color-mix(in oklch, var(--accent) 12%, transparent), transparent);
+    background-attachment: fixed;
+  }
+
+  body.dark {
+    background-image:
+      radial-gradient(140% 120% at 10% 20%, color-mix(in oklch, var(--primary) 8%, transparent), transparent),
+      radial-gradient(120% 140% at 80% 0%, color-mix(in oklch, var(--accent) 8%, transparent), transparent);
+  }
+
+  /* Focus visible styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
+  /* Skip to content link */
+  .skip-to-content {
+    @apply absolute left-0 top-0 bg-primary text-primary-foreground px-4 py-2 -translate-y-full focus:translate-y-0 transition-transform z-50;
+  }
+
+  /* Smooth transitions for interactive elements */
+  a, button {
+    @apply transition-colors duration-200;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted/30;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/40 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/60;
+  }
+
+  /* Improve readability with progressive enhancement */
+  p, li {
+    /* Fallback for older browsers */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* Modern browsers */
+    text-wrap: pretty;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    /* Fallback for older browsers */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* Modern browsers */
+    text-wrap: balance;
   }
 }
